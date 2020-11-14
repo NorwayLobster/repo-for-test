@@ -9,9 +9,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <editDistance.hpp>
+#include "utilities/utilities.hpp"
 using namespace std;
 
+namespace utilities{
 void splitEnglishAndChineseCharacter(const string & bytesFlow, vector<string> & v){
 	int bytesSize=bytesFlow.size();
 //	cout<<"bytesSize:"<<bytesSize<<endl;
@@ -74,5 +75,6 @@ int editDistance(vector<vector<int>>&memo, vector<string> & str, int index_str/*
     
     return min;
 }
+}//end of namespace utilities
 
 

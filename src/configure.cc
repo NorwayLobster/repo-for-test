@@ -6,9 +6,9 @@
  
 #include <iostream>
 #include <cstdlib>
-#include <configure.hpp>
 #include <sstream>
 #include <fstream>
+#include "utilities/configure.hpp"
 using std::cout;
 using std::endl;
 using std::cerr;
